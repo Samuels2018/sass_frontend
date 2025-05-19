@@ -5,6 +5,12 @@ import { Layout } from '../components/layout/Layout';
 import { LoginPage } from '../pages/loginPage/LoginPage';
 import { RegisterPage } from '../pages/registerPage/RegisterPage';
 import { ProfilePage } from '../pages/profilePage/ProfilePage';
+import SubscriptionPage  from '../pages/subscriptions/SubscriptionPage';
+import PlansPage  from '../pages/subscriptions/PlansPage';
+import ChangeSubscriptionPage from '../pages/subscriptions/ChangeSubscriptionPage';
+import RoutePage from '../pages/servicesApi/routePage';
+import Suscriptions from '../pages/servicesApi/suscription';
+import path from 'path';
 
 export const router = [
   {
@@ -22,6 +28,26 @@ export const router = [
       {
         path: 'profile',
         element: <ProfilePage />,
+      },
+      {
+        path: 'subscriptions',
+        element: <SubscriptionPage />,
+      },
+      {
+        path: 'plans',
+        element: <PlansPage />,
+      },
+      {
+        path: 'change-subscription',
+        element: <ChangeSubscriptionPage />,
+      },
+      {
+        path: 'route',
+        element: <RoutePage />,
+      },
+      {
+        path: 'servicesApi',
+        element: <Suscriptions />,
       },
       {
         index: true,
